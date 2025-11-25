@@ -37,6 +37,15 @@
         },
       };
     </script>
+    <style>
+      .project-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .project-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 25px rgba(16, 185, 129, 0.2);
+      }
+    </style>
     <link rel="icon" sizes="32x32" href="img/programming.png" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -163,6 +172,7 @@
             <img
               src="img/photo_profile.png"
               class="w-80 h-80 object-cover rounded-xl"
+              alt="Rafli Erlangga"
             />
           </div>
         </div>
@@ -197,7 +207,9 @@
               tahun 2023, dengan pengalaman sebelumnya sebagai IT Support dan
               Administrasi Operasional di PT. Inti Prima Rasa, menangani
               pemeliharaan jaringan, pengelolaan data, serta pengembangan web
-              sederhana. Saat ini, saya mengikuti Bootcamp Full Stack Web
+              sederhana. Dari situ, aku belajar bahwa troubleshoot jaringan
+              sambil ngopi pagi itu mirip banget sama debug code—seru tapi bikin
+              ketagihan! Saat ini, saya mengikuti Bootcamp Full Stack Web
               Developer di Dibimbing.id, menguasai frontend (HTML, CSS,
               Tailwind, JavaScript, React) dan backend (PHP, Laravel, MySQL,
               NoSQL, API, Git) untuk membangun aplikasi web efisien dan
@@ -252,11 +264,6 @@
           </div>
         </div>
       </div>
-
-      <div
-        class="absolute inset-0 bg-[url('/path/to/your-background-image.jpg')] bg-cover bg-center opacity-10 mix-blend-overlay"
-        style="z-index: 0"
-      ></div>
     </section>
 
     <section id="projects" class="py-20 bg-primary-light dark:bg-primary-dark">
@@ -276,6 +283,7 @@
             <img
               src="img/projects/BrickTechService.png"
               class="w-full h-56 object-cover rounded-xl mb-4"
+              alt="BrickTech Service"
             />
             <h3
               class="text-xl font-bold mb-2 text-textLight-light dark:text-textLight-dark"
@@ -283,8 +291,9 @@
               Laptop Service Website
             </h3>
             <p class="text-textMuted-light dark:text-textMuted-dark mb-4">
-              App belanja online dengan cart, search, dan payment
-              integration—dibangun selama bootcamp.
+              Website layanan servis laptop di Jakarta, lengkap dengan repair
+              hardware/software, upgrade SSD/RAM, dan konsultasi gratis. Built
+              in 3 days selama bootcamp.
             </p>
             <div class="flex flex-wrap gap-2 mb-4">
               <span
@@ -321,6 +330,7 @@
             <img
               src="img/projects/DINETFLIX.png"
               class="w-full h-56 object-cover rounded-xl mb-4"
+              alt="Dinetflix"
             />
             <h3
               class="text-xl font-bold mb-2 text-textLight-light dark:text-textLight-dark"
@@ -328,8 +338,9 @@
               Streaming Movies Website
             </h3>
             <p class="text-textMuted-light dark:text-textMuted-dark mb-4">
-              REST API untuk task management dengan auth JWT dan CRUD operations
-              full.
+              Mockup situs streaming ala Netflix dengan trending content,
+              multi-device support, offline downloads, dan sign-up mudah.
+              Latihan Tailwind grid & flex.
             </p>
             <div class="flex flex-wrap gap-2 mb-4">
               <span
@@ -366,6 +377,7 @@
             <img
               src="img/projects/CompanyProfile.png"
               class="w-full h-56 object-cover rounded-xl mb-4"
+              alt="Company Profile"
             />
             <h3
               class="text-xl font-bold mb-2 text-textLight-light dark:text-textLight-dark"
@@ -373,8 +385,9 @@
               Company Profile Website
             </h3>
             <p class="text-textMuted-light dark:text-textMuted-dark mb-4">
-              Dashboard responsif untuk monitoring data dengan charts dan
-              real-time updates.
+              Promo situs untuk layanan manufacturing modern, dengan dashboard
+              produksi, tech support, dan pricing packages (Starter ke
+              Enterprise). Practice HTML/CSS.
             </p>
             <div class="flex flex-wrap gap-2 mb-4">
               <span
@@ -407,15 +420,17 @@
             <img
               src="img/projects/diStreaming.png"
               class="w-full h-56 object-cover rounded-xl mb-4"
+              alt="diStreaming"
             />
             <h3
               class="text-xl font-bold mb-2 text-textLight-light dark:text-textLight-dark"
             >
-              Streaming Movies Website
+              Movie Trailers Streaming Site
             </h3>
             <p class="text-textMuted-light dark:text-textMuted-dark mb-4">
-              Aplikasi chat dengan Socket.io untuk messaging instan dan room
-              management.
+              Platform gratis untuk streaming trailer film dari seluruh dunia,
+              dengan save favorites, rekomendasi curated, dan kompatibilitas
+              multi-device. Assignment CSS fun.
             </p>
             <div class="flex flex-wrap gap-2 mb-4">
               <span
@@ -445,8 +460,9 @@
         </div>
         <div class="text-center">
           <a
-            href="#"
+            href="https://github.com/rafli19?tab=repositories"
             class="bg-accent text-primary px-8 py-3 rounded-full font-semibold hover:bg-green-600 transition"
+            target="_blank"
             >View All Projects</a
           >
         </div>
@@ -457,11 +473,6 @@
       id="contact"
       class="py-20 bg-gradient-to-br from-secondary-light via-white/50 to-secondary-light dark:from-secondary-dark dark:via-black/50 dark:to-secondary-dark relative overflow-hidden"
     >
-      <div
-        class="absolute inset-0 bg-[url('/path/to/your-background-image.jpg')] bg-cover bg-center opacity-10 mix-blend-overlay pointer-events-none"
-        style="z-index: 0"
-      ></div>
-
       <div class="container mx-auto px-6 relative z-10">
         <h2
           class="text-4xl font-bold mb-16 text-center text-textLight-light dark:text-textLight-dark"
@@ -501,7 +512,7 @@
           </div>
 
           <div
-            class="flex-1 bg-cardBg-light/90 dark:bg-cardBg-dark/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-border-light dark:border-border-dark"
+            class="flex-1 bg-cardBg-light/90 dark:bg-cardBg-dark/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-secondary-light dark:border-secondary-dark"
           >
             <form id="contact-form" class="space-y-6">
               <p
@@ -697,7 +708,8 @@
         </div>
         <div class="border-t border-accent/10 pt-6 text-center">
           <p class="text-textMuted-light dark:text-textMuted-dark">
-            &copy; 2025 Rafli Erlangga. All Rights Reserved.
+            &copy; <span id="current-year"></span> Rafli Erlangga. All Rights
+            Reserved.
           </p>
         </div>
       </div>
@@ -716,8 +728,7 @@
           label.classList.add("bg-accent", "text-primary");
         });
       });
-    </script>
-    <script>
+
       const themeToggle = document.getElementById("theme-toggle");
       const themeIcon = document.getElementById("theme-icon");
       const html = document.documentElement;
@@ -758,16 +769,26 @@
         .getElementById("contact-form")
         .addEventListener("submit", (e) => {
           e.preventDefault();
-          alert("Pesan terkirim! Terima kasih.");
+          alert(
+            "Pesan terkirim! Terima kasih atas interest-nya. Aku balas secepatnya via email."
+          );
         });
 
-      function toggleInterest(el, value) {
-        document
-          .querySelectorAll(".px-4.py-2.rounded-md")
-          .forEach((btn) => btn.classList.remove("bg-accent", "text-primary"));
-        el.classList.add("bg-accent", "text-primary");
-        document.querySelector(`input[value="${value}"]`).checked = true;
-      }
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      document.querySelectorAll("#mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
 
       window.addEventListener("load", () => {
         const projectItems = document.querySelectorAll(".filter-item");
@@ -779,20 +800,6 @@
             item.style.opacity = "1";
             item.style.transform = "translateY(0)";
           }, index * 200);
-        });
-      });
-    </script>
-    <script>
-      const mobileMenuButton = document.getElementById("mobile-menu-button");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      mobileMenuButton.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-
-      document.querySelectorAll("#mobile-menu a").forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenu.classList.add("hidden");
         });
       });
     </script>
