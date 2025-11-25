@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="id" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAFERL - Junior Full Stack Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                light: "#1e293b",
+                dark: "#0a0a0a",
+              },
+              secondary: {
+                light: "#334155",
+                dark: "#1a1a1a",
+              },
+              accent: "#10b981",
+              textLight: {
+                light: "#e2e8f0",
+                dark: "#f8fafc",
+              },
+              textMuted: {
+                light: "#94a3b8",
+                dark: "#94a3b8",
+              },
+              cardBg: {
+                light: "#242f40",
+                dark: "#1e293b",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="icon" sizes="32x32" href="img/programming.png" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-primary-light dark:bg-primary-dark text-textLight-light dark:text-textLight-dark font-inter scroll-smooth"
+  >
+    <nav
+      class="fixed top-0 w-full z-50 backdrop-blur-md bg-primary-light/90 dark:bg-primary-dark/90 border-b border-transparent transition-all duration-300"
+    >
+      <div
+        class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center"
+      >
+        <div class="text-xl font-bold tracking-tight">
+          <a href="#" class="text-accent hover:text-green-500 transition"
+            >RAFERL</a
+          >
+        </div>
+
+        <div class="hidden md:flex items-center space-x-1">
+          <a
+            href="#about"
+            class="px-4 py-2 text-textLight-light dark:text-textLight-dark hover:text-accent font-medium rounded-md transition"
+            >About</a
+          >
+          <a
+            href="#projects"
+            class="px-4 py-2 text-textLight-light dark:text-textLight-dark hover:text-accent font-medium rounded-md transition"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="px-4 py-2 text-textLight-light dark:text-textLight-dark hover:text-accent font-medium rounded-md transition"
+            >Contact</a
+          >
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <button
+            id="theme-toggle"
+            class="text-textLight-light dark:text-textLight-dark hover:text-accent p-2 rounded-full transition"
+          >
+            <i id="theme-icon" class="fas fa-sun"></i>
+          </button>
+
+          <button
+            id="mobile-menu-button"
+            class="md:hidden text-textLight-light dark:text-textLight-dark hover:text-accent p-2 rounded-md"
+          >
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-primary-light dark:bg-primary-dark border-t border-accent/10"
+      >
+        <div class="container mx-auto px-4 py-4 flex flex-col space-y-3">
+          <a
+            href="#about"
+            class="text-textLight-light dark:text-textLight-dark hover:text-accent font-medium py-2"
+            >About</a
+          >
+          <a
+            href="#projects"
+            class="text-textLight-light dark:text-textLight-dark hover:text-accent font-medium py-2"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="text-textLight-light dark:text-textLight-dark hover:text-accent font-medium py-2"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="pt-24 pb-20 min-h-screen flex items-center bg-gradient-to-br from-primary-light to-secondary-light dark:from-primary-dark dark:to-secondary-dark"
+    >
+      <div class="container mx-auto px-6">
+        <div
+          class="flex flex-col lg:flex-row gap-8 items-start lg:items-center"
+        >
+          <div class="flex-1">
+            <h1
+              class="text-5xl md:text-6xl font-bold mb-4 text-textLight-light dark:text-textLight-dark"
+            >
+              Rafli Erlangga
+            </h1>
+            <h2 class="text-3xl md:text-4xl font-semibold mb-6 text-accent">
+              Junior Full Stack Web Developer.
+            </h2>
+            <p
+              class="text-xl md:text-2xl mb-8 text-textMuted-light dark:text-textMuted-dark max-w-2xl leading-relaxed"
+            >
+              Spesialisasi dalam membangun aplikasi web end-to-end menggunakan
+              teknologi modern untuk mewujudkan visi Anda. Saat ini sedang
+              menyelesaikan bootcamp Full Stack Web Developer di Dibimbing.id,
+              dengan pengalaman IT Support sebelumnya.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 items-center">
+              <a
+                href="#contact"
+                class="bg-accent text-primary px-8 py-3 rounded-full font-semibold hover:bg-green-600 transition"
+                >Get in Touch</a
+              >
+              <div class="flex items-center text-accent">
+                <div
+                  class="w-2 h-2 bg-accent rounded-full mr-2 animate-pulse"
+                ></div>
+                <span>Available now</span>
+              </div>
+            </div>
+          </div>
+          <div class="bg-accent rounded-xl p-2 flex-shrink-0">
+            <img
+              src="img/photo_profile.png"
+              class="w-80 h-80 object-cover rounded-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="py-20 bg-gradient-to-br from-secondary-light via-white/50 to-secondary-light dark:from-secondary-dark dark:via-black/50 dark:to-secondary-dark bg-no-repeat bg-cover relative overflow-hidden"
+    >
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          <div class="relative">
+            <img
+              src="img/photo_profile.png"
+              class="w-full rounded-2xl shadow-2xl relative z-20"
+              alt="Rafli Erlangga Profile"
+            />
+          </div>
+          <div
+            class="relative z-20 bg-cardBg-light/90 dark:bg-cardBg-dark/90 backdrop-blur-sm rounded-2xl p-6 md:p-8"
+          >
+            <h2
+              class="text-4xl font-bold mb-8 text-textLight-light dark:text-textLight-dark"
+            >
+              About Me
+            </h2>
+            <p
+              class="text-lg mb-8 text-textMuted-light dark:text-textMuted-dark leading-relaxed"
+            >
+              Halo, saya Rafli Erlangga, lulusan S1 Teknik Informatika UHAMKA
+              tahun 2023, dengan pengalaman sebelumnya sebagai IT Support dan
+              Administrasi Operasional di PT. Inti Prima Rasa, menangani
+              pemeliharaan jaringan, pengelolaan data, serta pengembangan web
+              sederhana. Saat ini, saya mengikuti Bootcamp Full Stack Web
+              Developer di Dibimbing.id, menguasai frontend (HTML, CSS,
+              Tailwind, JavaScript, React) dan backend (PHP, Laravel, MySQL,
+              NoSQL, API, Git) untuk membangun aplikasi web efisien dan
+              skalabel. Saya aktif mencari peluang karir sebagai Full Stack
+              Developer. Mari berkolaborasi atau diskusikan ide proyek seru!
+            </p>
+            <div class="flex flex-wrap gap-4 mb-8">
+              <span
+                class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm border border-accent/20"
+                ><i class="fab fa-js-square mr-1"></i>JavaScript</span
+              >
+              <span
+                class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm border border-accent/20"
+                ><i class="fab fa-react mr-1"></i>React</span
+              >
+              <span
+                class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm border border-accent/20"
+                ><i class="fab fa-node-js mr-1"></i>NodeJS</span
+              >
+              <span
+                class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm border border-accent/20"
+                ><i class="fab fa-css3-alt mr-1"></i>CSS</span
+              >
+              <span
+                class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm border border-accent/20"
+                >Tailwind</span
+              >
+              <span
+                class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm border border-accent/20"
+                ><i class="fab fa-php mr-1"></i>PHP</span
+              >
+              <span
+                class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm border border-accent/20"
+                ><i class="fas fa-database mr-1"></i>MySQL</span
+              >
+              <span
+                class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm border border-accent/20"
+                ><i class="fas fa-database mr-1"></i>MongoDB</span
+              >
+              <span
+                class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm border border-accent/20"
+                ><i class="fab fa-git-alt mr-1"></i>Git</span
+              >
+            </div>
+            <a
+              href="#"
+              download
+              class="inline-flex items-center bg-accent text-primary px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition"
+            >
+              <i class="fas fa-download mr-2"></i>Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="absolute inset-0 bg-[url('/path/to/your-background-image.jpg')] bg-cover bg-center opacity-10 mix-blend-overlay"
+        style="z-index: 0"
+      ></div>
+    </section>
+
+    <section id="projects" class="py-20 bg-primary-light dark:bg-primary-dark">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-4xl font-bold mb-12 text-center text-textLight-light dark:text-textLight-dark"
+        >
+          Projects
+        </h2>
+        <div
+          class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16"
+          id="project-grid"
+        >
+          <div
+            class="project-card bg-secondary-light dark:bg-secondary-dark p-6 rounded-2xl border border-accent/20 filter-item"
+          >
+            <img
+              src="img/projects/BrickTechService.png"
+              class="w-full h-56 object-cover rounded-xl mb-4"
+            />
+            <h3
+              class="text-xl font-bold mb-2 text-textLight-light dark:text-textLight-dark"
+            >
+              Laptop Service Website
+            </h3>
+            <p class="text-textMuted-light dark:text-textMuted-dark mb-4">
+              App belanja online dengan cart, search, dan payment
+              integration—dibangun selama bootcamp.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-accent/10 text-accent px-2 py-1 rounded-full text-sm border border-accent/20"
+                >HTML</span
+              >
+              <span
+                class="bg-accent/10 text-accent px-2 py-1 rounded-full text-sm border border-accent/20"
+                >Tailwind</span
+              >
+              <span
+                class="bg-accent/10 text-accent px-2 py-1 rounded-full text-sm border border-accent/20"
+                >Javascript</span
+              >
+            </div>
+            <div class="flex space-x-2">
+              <a
+                href="https://rafli19.github.io/MiniProject-Tailwind-FWD9-RafliErlangga/"
+                class="flex-1 bg-accent text-primary py-2 rounded-full text-center font-semibold hover:bg-green-600 transition"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/rafli19/MiniProject-Tailwind-FWD9-RafliErlangga"
+                class="flex-1 border border-textMuted-light dark:border-textMuted-dark text-textMuted-light dark:text-textMuted-dark py-2 rounded-full text-center hover:bg-gray-600 transition"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div
+            class="project-card bg-secondary-light dark:bg-secondary-dark p-6 rounded-2xl border border-accent/20 filter-item"
+          >
+            <img
+              src="img/projects/DINETFLIX.png"
+              class="w-full h-56 object-cover rounded-xl mb-4"
+            />
+            <h3
+              class="text-xl font-bold mb-2 text-textLight-light dark:text-textLight-dark"
+            >
+              Streaming Movies Website
+            </h3>
+            <p class="text-textMuted-light dark:text-textMuted-dark mb-4">
+              REST API untuk task management dengan auth JWT dan CRUD operations
+              full.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-accent/10 text-accent px-2 py-1 rounded-full text-sm border border-accent/20"
+                >HTML</span
+              >
+              <span
+                class="bg-accent/10 text-accent px-2 py-1 rounded-full text-sm border border-accent/20"
+                >Tailwind</span
+              >
+              <span
+                class="bg-accent/10 text-accent px-2 py-1 rounded-full text-sm border border-accent/20"
+                >Javascript</span
+              >
+            </div>
+            <div class="flex space-x-2">
+              <a
+                href="https://rafli19.github.io/HandsOn-day20-FWD9-RafliErlangga/"
+                class="flex-1 bg-accent text-primary py-2 rounded-full text-center font-semibold hover:bg-green-600 transition"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/rafli19/HandsOn-day20-FWD9-RafliErlangga"
+                class="flex-1 border border-textMuted-light dark:border-textMuted-dark text-textMuted-light dark:text-textMuted-dark py-2 rounded-full text-center hover:bg-gray-600 transition"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div
+            class="project-card bg-secondary-light dark:bg-secondary-dark p-6 rounded-2xl border border-accent/20 filter-item"
+          >
+            <img
+              src="img/projects/CompanyProfile.png"
+              class="w-full h-56 object-cover rounded-xl mb-4"
+            />
+            <h3
+              class="text-xl font-bold mb-2 text-textLight-light dark:text-textLight-dark"
+            >
+              Company Profile Website
+            </h3>
+            <p class="text-textMuted-light dark:text-textMuted-dark mb-4">
+              Dashboard responsif untuk monitoring data dengan charts dan
+              real-time updates.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-accent/10 text-accent px-2 py-1 rounded-full text-sm border border-accent/20"
+                >HTML</span
+              >
+              <span
+                class="bg-accent/10 text-accent px-2 py-1 rounded-full text-sm border border-accent/20"
+                >CSS</span
+              >
+            </div>
+            <div class="flex space-x-2">
+              <a
+                href="https://rafli19.github.io/Hands-on_day16_FWD9_RafliErlangga/"
+                class="flex-1 bg-accent text-primary py-2 rounded-full text-center font-semibold hover:bg-green-600 transition"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/rafli19/Hands-on_day16_FWD9_RafliErlangga"
+                class="flex-1 border border-textMuted-light dark:border-textMuted-dark text-textMuted-light dark:text-textMuted-dark py-2 rounded-full text-center hover:bg-gray-600 transition"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div
+            class="project-card bg-secondary-light dark:bg-secondary-dark p-6 rounded-2xl border border-accent/20 filter-item"
+          >
+            <img
+              src="img/projects/diStreaming.png"
+              class="w-full h-56 object-cover rounded-xl mb-4"
+            />
+            <h3
+              class="text-xl font-bold mb-2 text-textLight-light dark:text-textLight-dark"
+            >
+              Streaming Movies Website
+            </h3>
+            <p class="text-textMuted-light dark:text-textMuted-dark mb-4">
+              Aplikasi chat dengan Socket.io untuk messaging instan dan room
+              management.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-accent/10 text-accent px-2 py-1 rounded-full text-sm border border-accent/20"
+                >HTML</span
+              >
+              <span
+                class="bg-accent/10 text-accent px-2 py-1 rounded-full text-sm border border-accent/20"
+                >CSS</span
+              >
+            </div>
+            <div class="flex space-x-2">
+              <a
+                href="https://rafli19.github.io/Assignment-Day16-FWD9-RafliErlangga/"
+                class="flex-1 bg-accent text-primary py-2 rounded-full text-center font-semibold hover:bg-green-600 transition"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/rafli19/Assignment-Day16-FWD9-RafliErlangga"
+                class="flex-1 border border-textMuted-light dark:border-textMuted-dark text-textMuted-light dark:text-textMuted-dark py-2 rounded-full text-center hover:bg-gray-600 transition"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a
+            href="#"
+            class="bg-accent text-primary px-8 py-3 rounded-full font-semibold hover:bg-green-600 transition"
+            >View All Projects</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="py-20 bg-gradient-to-br from-secondary-light via-white/50 to-secondary-light dark:from-secondary-dark dark:via-black/50 dark:to-secondary-dark relative overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 bg-[url('/path/to/your-background-image.jpg')] bg-cover bg-center opacity-10 mix-blend-overlay pointer-events-none"
+        style="z-index: 0"
+      ></div>
+
+      <div class="container mx-auto px-6 relative z-10">
+        <h2
+          class="text-4xl font-bold mb-16 text-center text-textLight-light dark:text-textLight-dark"
+        >
+          Get In Touch
+        </h2>
+
+        <div class="flex flex-col lg:flex-row gap-12 items-center">
+          <div class="flex-1 text-center lg:text-left space-y-6">
+            <h3
+              class="text-4xl font-light leading-tight text-textLight-light dark:text-textLight-dark"
+            >
+              Mari kita bahas
+            </h3>
+            <p
+              class="text-4xl font-light leading-tight text-textLight-light dark:text-textLight-dark"
+            >
+              sesuatu
+              <span
+                class="text-accent font-bold bg-gradient-to-r from-accent to-green-500 bg-clip-text text-transparent hover:bg-gradient-to-l transition-all duration-300 cursor-pointer"
+                >yang menarik</span
+              >
+            </p>
+            <p
+              class="text-4xl font-light leading-tight text-textLight-light dark:text-textLight-dark"
+            >
+              bersama<span class="text-accent font-bold">.</span>
+            </p>
+            <div class="mt-8 w-20 h-0.5 bg-accent mx-auto lg:mx-0"></div>
+            <p
+              class="mt-6 text-base md:text-lg font-medium text-textLight-light dark:text-textLight-dark leading-relaxed"
+            >
+              Saya selalu menyambut kesempatan diskusi baru, baik dalam bentuk
+              kolaborasi profesional, proyek freelance, maupun pertukaran ide
+              inovatif.
+            </p>
+          </div>
+
+          <div
+            class="flex-1 bg-cardBg-light/90 dark:bg-cardBg-dark/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-border-light dark:border-border-dark"
+          >
+            <form id="contact-form" class="space-y-6">
+              <p
+                class="text-sm text-textMuted-light dark:text-textMuted-dark mb-4"
+              >
+                What brings you here?
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-6">
+                <label
+                  class="option-btn px-4 py-2 rounded-md font-medium border border-textMuted-light dark:border-textMuted-dark text-primary cursor-pointer transition-all duration-200 hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+                >
+                  <input
+                    type="radio"
+                    name="interest"
+                    value="job"
+                    class="sr-only"
+                    checked
+                  />
+                  Job Opportunity
+                </label>
+                <label
+                  class="option-btn px-4 py-2 rounded-md font-medium border border-textMuted-light dark:border-textMuted-dark text-primary cursor-pointer transition-all duration-200 hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+                >
+                  <input
+                    type="radio"
+                    name="interest"
+                    value="collaboration"
+                    class="sr-only"
+                  />
+                  Collaboration
+                </label>
+                <label
+                  class="option-btn px-4 py-2 rounded-md font-medium border border-textMuted-light dark:border-textMuted-dark text-primary cursor-pointer transition-all duration-200 hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+                >
+                  <input
+                    type="radio"
+                    name="interest"
+                    value="freelance"
+                    class="sr-only"
+                  />
+                  Freelance Project
+                </label>
+              </div>
+
+              <div class="relative">
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  class="w-full p-4 border-b border-textMuted-light dark:border-textMuted-dark text-textLight-light dark:text-textLight-dark focus:border-accent focus:outline-none bg-transparent transition-colors duration-200 peer"
+                  required
+                />
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-0.5 bg-accent transition-all duration-200 peer-focus:w-full"
+                ></span>
+              </div>
+
+              <div class="relative">
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  class="w-full p-4 border-b border-textMuted-light dark:border-textMuted-dark text-textLight-light dark:text-textLight-dark focus:border-accent focus:outline-none bg-transparent transition-colors duration-200 peer"
+                  required
+                />
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-0.5 bg-accent transition-all duration-200 peer-focus:w-full"
+                ></span>
+              </div>
+
+              <div class="relative">
+                <textarea
+                  placeholder="Your message"
+                  rows="4"
+                  class="w-full p-4 border-b border-textMuted-light dark:border-textMuted-dark text-textLight-light dark:text-textLight-dark focus:border-accent focus:outline-none bg-transparent transition-colors duration-200 peer resize-none"
+                  required
+                ></textarea>
+                <span
+                  class="absolute left-0 bottom-0 w-0 h-0.5 bg-accent transition-all duration-200 peer-focus:w-full"
+                ></span>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-accent text-primary py-4 rounded-md font-semibold hover:bg-green-600 transition-all duration-200 flex items-center justify-center gap-2 group"
+              >
+                <i
+                  class="fas fa-paper-plane transition-transform group-hover:translate-x-1"
+                ></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-primary-light dark:bg-primary-dark py-12 border-t border-accent/10"
+    >
+      <div class="container mx-auto px-6">
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 justify-items-center items-center text-center"
+        >
+          <div class="flex flex-col items-center space-y-2">
+            <h4
+              class="text-lg font-semibold mb-2 text-textLight-light dark:text-textLight-dark"
+            >
+              Quick Links
+            </h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#about"
+                  class="text-textMuted-light dark:text-textMuted-dark hover:text-accent transition"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="text-textMuted-light dark:text-textMuted-dark hover:text-accent transition"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-textMuted-light dark:text-textMuted-dark hover:text-accent transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col items-center space-y-2">
+            <h4
+              class="text-lg font-semibold mb-2 text-textLight-light dark:text-textLight-dark"
+            >
+              Get in Touch
+            </h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="mailto:raflierlangga2001@gmail.com"
+                  class="text-textMuted-light dark:text-textMuted-dark hover:text-accent transition flex items-center justify-center"
+                  target="_blank"
+                >
+                  <i class="fas fa-envelope mr-2"></i>
+                  raflierlangga2001@gmail.com
+                </a>
+              </li>
+              <li>
+                <span
+                  class="text-textMuted-light dark:text-textMuted-dark flex items-center justify-center"
+                >
+                  <i class="fas fa-map-marker-alt mr-2"></i>
+                  Jakarta, Indonesia
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col items-center space-y-2">
+            <h4
+              class="text-lg font-semibold mb-2 text-textLight-light dark:text-textLight-dark"
+            >
+              Follow Me
+            </h4>
+            <div class="flex justify-center space-x-4">
+              <a
+                href="https://www.linkedin.com/in/rafli-e-a2396b134/"
+                class="text-textMuted-light dark:text-textMuted-dark hover:text-accent transition text-2xl"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/rafli19"
+                class="text-textMuted-light dark:text-textMuted-dark hover:text-accent transition text-2xl"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/erlangfly19/"
+                class="text-textMuted-light dark:text-textMuted-dark hover:text-accent transition text-2xl"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-accent/10 pt-6 text-center">
+          <p class="text-textMuted-light dark:text-textMuted-dark">
+            &copy; 2025 Rafli Erlangga. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".option-btn").forEach((label) => {
+        const input = label.querySelector("input");
+        if (input.checked) {
+          label.classList.add("bg-accent", "text-primary");
+        }
+        label.addEventListener("click", () => {
+          document.querySelectorAll(".option-btn").forEach((el) => {
+            el.classList.remove("bg-accent", "text-primary");
+          });
+          label.classList.add("bg-accent", "text-primary");
+        });
+      });
+    </script>
+    <script>
+      const themeToggle = document.getElementById("theme-toggle");
+      const themeIcon = document.getElementById("theme-icon");
+      const html = document.documentElement;
+
+      if (
+        localStorage.getItem("theme") === "light" ||
+        (!localStorage.getItem("theme") &&
+          window.matchMedia("(prefers-color-scheme: light)").matches)
+      ) {
+        html.classList.remove("dark");
+        themeIcon.className = "fas fa-moon";
+      } else {
+        html.classList.add("dark");
+        themeIcon.className = "fas fa-sun";
+      }
+
+      themeToggle.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        if (html.classList.contains("dark")) {
+          themeIcon.className = "fas fa-sun";
+          localStorage.setItem("theme", "dark");
+        } else {
+          themeIcon.className = "fas fa-moon";
+          localStorage.setItem("theme", "light");
+        }
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          alert("Pesan terkirim! Terima kasih.");
+        });
+
+      function toggleInterest(el, value) {
+        document
+          .querySelectorAll(".px-4.py-2.rounded-md")
+          .forEach((btn) => btn.classList.remove("bg-accent", "text-primary"));
+        el.classList.add("bg-accent", "text-primary");
+        document.querySelector(`input[value="${value}"]`).checked = true;
+      }
+
+      window.addEventListener("load", () => {
+        const projectItems = document.querySelectorAll(".filter-item");
+        projectItems.forEach((item, index) => {
+          item.style.opacity = "0";
+          item.style.transform = "translateY(20px)";
+          setTimeout(() => {
+            item.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+            item.style.opacity = "1";
+            item.style.transform = "translateY(0)";
+          }, index * 200);
+        });
+      });
+    </script>
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      document.querySelectorAll("#mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
