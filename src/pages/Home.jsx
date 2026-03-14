@@ -6,9 +6,9 @@ import {
 } from "../data/portfolioData";
 
 const STATS = [
-  { value: "4+", label: "Projects Built" },
+  { value: "8+", label: "Projects Built" },
   { value: "2+", label: "Years IT Experience" },
-  { value: "9+", label: "Technologies" },
+  { value: "8+", label: "Technologies" },
   { value: "100%", label: "Passion for Code" },
 ];
 
