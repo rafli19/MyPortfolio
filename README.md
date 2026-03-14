@@ -1,16 +1,83 @@
-# React + Vite
+# 🌐 MyPortfolio — Rafli Erlangga
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website showcasing my projects and skills as a Full Stack Web Developer.
 
-Currently, two official plugins are available:
+🔗 **Live:** [rafvoid.my.id](https://rafvoid.my.id)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework:** React 19 + Vite
+- **Styling:** Tailwind CSS
+- **Routing:** React Router DOM
+- **Email:** EmailJS
+- **Icons:** Font Awesome, Devicons
+- **Deployment:** cPanel Hosting
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- Responsive design (mobile & desktop)
+- Dark / Light mode toggle
+- Project filter by tech stack
+- Contact form with EmailJS integration (sends to Gmail)
+- Smooth transitions & hover animations
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/       # Navbar, Footer, dll
+├── context/          # Theme context (dark/light mode)
+├── data/             # portfolioData.js (projects, skills, links)
+├── pages/            # Home, About, Skills, Projects, Contact
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js >= 18
+- npm atau yarn
+
+### Installation
+
+```bash
+# Clone repo
+git clone https://github.com/rafli19/MyPortfolio.git
+cd MyPortfolio
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 📬 Contact
+
+- **Email:** raflierlangga19@gmail.com
+- **LinkedIn:** [linkedin.com/in/rafli-e-a2396b134](https://www.linkedin.com/in/rafli-e-a2396b134/)
+- **GitHub:** [github.com/rafli19](https://github.com/rafli19)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
