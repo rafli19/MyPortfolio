@@ -12,7 +12,8 @@ const STATS = [
   { value: "100%", label: "Passion for Code" },
 ];
 
-const FEATURED_PROJECTS = PROJECTS.slice(0, 2);
+// const FEATURED_PROJECTS = PROJECTS.slice(0, 2);
+const FEATURED_PROJECTS = PROJECTS.slice(-2).reverse();
 const ALL_SKILLS = SKILL_CATEGORIES.flatMap((cat) => cat.skills).slice(0, 8);
 
 export default function Home() {
