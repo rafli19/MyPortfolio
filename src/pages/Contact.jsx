@@ -6,8 +6,8 @@ const CONTACT_INFO = [
   {
     icon: "fas fa-envelope",
     label: "Email",
-    value: "raflierlangga19@gmail.com",
-    href: "mailto:raflierlangga19@gmail.com",
+    value: "raflierlangga145@gmail.com",
+    href: "mailto:raflierlangga145@gmail.com",
   },
   {
     icon: "fas fa-map-marker-alt",

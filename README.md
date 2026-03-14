@@ -72,7 +72,7 @@ npm run build
 
 ## 📬 Contact
 
-- **Email:** raflierlangga19@gmail.com
+- **Email:** raflierlangga145@gmail.com
 - **LinkedIn:** [linkedin.com/in/rafli-e-a2396b134](https://www.linkedin.com/in/rafli-e-a2396b134/)
 - **GitHub:** [github.com/rafli19](https://github.com/rafli19)
 

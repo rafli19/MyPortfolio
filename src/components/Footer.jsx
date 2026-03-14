@@ -33,11 +33,11 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="mailto:raflierlangga19@gmail.com"
+                  href="mailto:raflierlangga145@gmail.com"
                   className="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors flex items-center justify-center gap-2"
                 >
                   <i className="fas fa-envelope" />
-                  raflierlangga19@gmail.com
+                  raflierlangga145@gmail.com
                 </a>
               </li>
               <li className="text-slate-500 dark:text-slate-400 flex items-center justify-center gap-2">

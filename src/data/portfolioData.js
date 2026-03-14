@@ -73,7 +73,7 @@ export const PROJECTS = [
       "MySQL",
     ],
     demo: "https://app.rafvoid.my.id/",
-    github: "https://github.com/rafli19/HandsOn-day20-FWD9-RafliErlangga",
+    github: "https://github.com/rafli19/CinenovaAPP",
   },
   {
     id: 3,
@@ -90,7 +90,7 @@ export const PROJECTS = [
       "MySQL",
     ],
     demo: "https://pos-app.rafvoid.my.id/login",
-    github: "https://github.com/rafli19/Hands-on_day16_FWD9_RafliErlangga",
+    github: "https://github.com/rafli19/POS-APP",
   },
   {
     id: 4,
@@ -107,7 +107,7 @@ export const PROJECTS = [
       "MySQL",
     ],
     demo: "https://walletapp.rafvoid.my.id/login",
-    github: "https://github.com/rafli19/Assignment-Day16-FWD9-RafliErlangga",
+    github: "https://github.com/rafli19/POS-APP",
   },
 ];
 
